@@ -1,0 +1,51 @@
+#mini-map {
+	position: fixed;
+	z-index: 21;
+	top: 20px;
+	width: 60px;
+	opacity: 1;
+	-webkit-transition: opacity 1s ease;
+	   -moz-transition: opacity 1s ease;
+		 -o-transition: opacity 1s ease;
+			transition: opacity 1s ease;
+}
+	#mini-map.out-of-view {
+		opacity: 0;
+	}
+	#mini-map #current-view {
+		border: 2px solid #333;
+		width: 64px;
+		background: none;
+		margin: -1px 0 0 -4px;
+		z-index: 22;
+		position: absolute;
+	}
+	#mini-map div {
+		position: absolute;
+		background: #EAEAEA;
+		width: 100%;
+	}
+		#mini-map div.h1 {
+			background: #666;
+		}
+		#mini-map div.h2 {
+			background: #999;
+		}
+		#mini-map div.h3 {
+			background: #CCC;
+		}
+		#mini-map div.p {
+			background: #F9F9F9;
+		}
+		#mini-map div.ul {
+			background: #FCC;
+		}
+		#mini-map div.ol {
+			background: #F60;
+		}
+		#mini-map div.figure {
+			background: #F4F4F4;
+		}
+		#mini-map div.pre {
+			background: #0Cf;
+		}
